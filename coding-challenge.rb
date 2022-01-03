@@ -18,11 +18,8 @@ def bill_for(month, active_subscription, users)
 
     users.each { |employee|
 
-      active_users += 1
+      active_users += 1         # increment for each user who was active during the billing period
       puts employee[:id]
-
-        # increment for each user who was active during the billing period
-        active_users += 1
 
         # the employee started after the beginning of the month being calculated, get the employee activation date.
         # otherwise use the first day of the month
@@ -71,8 +68,6 @@ def bill_for(month, active_subscription, users)
 
         # ok writing code for real now in my ide c/p when done
         return total_usage
-
-
 
       end
 
